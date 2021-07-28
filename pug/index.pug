@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../style/index.css")
+        script(src="../js/script.js") 
+        title Document
+    body 
+        .container
+            .task
+                h1.task__txt Среднее арифметическое: 
+                form.task__form(action='#')
+                    input#number_1.task__item(type='text' placeholder='Первое число')
+                    input#number_2.task__item(type='text' placeholder='Второе число')
+                    input#number_3.task__item(type='text' placeholder='Третье число')
+                    button.task__item.task__button(onclick='func1()') SUMBIT
+                    output.task__item.task__result Результат: 
+                        span#result  
+            .task
+                h1.task__txt Перевод температуры:
+                form.task__form(action='#')
+                    input#temp.task__item.task__temperature(type='text' placeholder='Цельсии')
+                    button.task__item.task__button(onclick='func2()') SUMBIT  
+                    output.task__item.task__result Результат в фаренгейтах:   
+                        span#result-temp
+            .task
+                h1.task__txt Площадь и периметр: 
+                form.task__form(action='#')
+                    input#side-a.task__item(type='text' placeholder='Сторона: A')
+                    input#side-b.task__item(type='text' placeholder='Сторона: B')
+                    button.task__item.task__button(onclick='func3()') SUMBIT
+                    output.task__item.task__result Результат площади: 
+                        span#result-area   
+                    output.task__item.task__result Результат периметра:   
+                        span#result-perimetr

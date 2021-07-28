@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="../js/script.js"> </script>
+    <title>Document</title>
+  </head>
+  <body> 
+    <div class="container">
+      <div class="task">
+        <h1 class="task__txt">Среднее арифметическое: </h1>
+        <form class="task__form" action="#">
+          <input class="task__item" id="number_1" type="text" placeholder="Первое число">
+          <input class="task__item" id="number_2" type="text" placeholder="Второе число">
+          <input class="task__item" id="number_3" type="text" placeholder="Третье число">
+          <button class="task__item task__button" onclick="func1()">SUMBIT</button>
+          <output class="task__item task__result">Результат: <span id="result"> </span></output>
+        </form>
+      </div>
+      <div class="task">
+        <h1 class="task__txt">Перевод температуры:</h1>
+        <form class="task__form" action="#">
+          <input class="task__item task__temperature" id="temp" type="text" placeholder="Цельсии">
+          <button class="task__item task__button" onclick="func2()">SUMBIT  </button>
+          <output class="task__item task__result">Результат в фаренгейтах:   <span id="result-temp"></span></output>
+        </form>
+      </div>
+      <div class="task">
+        <h1 class="task__txt">Площадь и периметр: </h1>
+        <form class="task__form" action="#">
+          <input class="task__item" id="side-a" type="text" placeholder="Сторона: A">
+          <input class="task__item" id="side-b" type="text" placeholder="Сторона: B">
+          <button class="task__item task__button" onclick="func3()">SUMBIT</button>
+          <output class="task__item task__result">Результат площади: <span id="result-area">  </span></output>
+          <output class="task__item task__result">Результат периметра:   <span id="result-perimetr"></span></output>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
